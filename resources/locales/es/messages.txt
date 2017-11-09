@@ -1,0 +1,144 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+# � = \u00d1	Ñ, � = \u00f1	ñ
+# � = \u00e1	á, � = \u00e9	é
+# � = \u00ed	í, � = \u00f3	ó
+# � = \u00fa	ú, � = \u00fc	ü
+
+var:polish.command.select=Seleccione
+var:polish.command.cancel=Cancelar
+var:polish.command.delete=Eliminar
+var:polish.command.clear=Borrar
+var:polish.command.options=Opciones
+var:polish.title.input=Entrada
+
+var:polish.command.mark=Marca
+var:polish.command.unmark=Anul
+
+polish.predictive.setup.cmd.exit=salida
+polish.predictive.setup.cmd.cancel=cancelar
+polish.predictive.setup.cmd.yes=yes
+polish.predictive.setup.cmd.no=no
+polish.predictive.setup.title=t\u00edtulo
+polish.predictive.setup.info=info
+polish.predictive.setup.status.delete=eliminar
+polish.predictive.setup.status.install=instalar
+polish.predictive.setup.status.finished=terminado
+polish.predictive.setup.error=error
+polish.predictive.setup.cancel=cancelar
+polish.predictive.command.enable=permitir
+polish.predictive.command.install=instalar
+polish.predictive.command.disable=desactivar
+polish.predictive.registerNewWord.command=comando
+polish.predictive.title=t\u00edtulo
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=t\u00edtulo
+polish.predictive.download.message=mensaje
+polish.predictive.registerNewWord.label=etiqueta
+polish.predictive.local.title=t\u00edtulo
+polish.predictive.local.message=mensaje
+
+title.mainmenu=Men\u00fa
+title.online=B\u00fasqueda en l\u00ednea
+title.option=Opci\u00f3n
+title.result=Resultado
+title.wordlist=Lista
+title.wordbook=Palabra de libros
+title.about=Acerca de
+title.help=Ayuda
+title.register=Registro
+title.alerterror=Error:
+title.alertinfo=Info:
+title.alertwarning=Advertencia:
+title.history=Historia
+title.userbook=Usuario Reserva
+title.wordbookmenu=Palabra Men\u00fa
+title.recitemenu=Recita Men\u00fa
+title.reciterandom=Recita aleatoria
+title.recitewordfill=Palabra de relleno
+title.recitewordchoice=Selecci\u00f3n de palabras
+
+cmd.ok=OK
+cmd.help=Ayuda
+cmd.about=Acerca de
+cmd.select=Seleccione
+cmd.quit=Salir
+cmd.showLog=Mostrar Registro
+cmd.no=No
+cmd.yes=S\u00ed
+cmd.continue=Continuar
+cmd.save=Guardar
+cmd.edit=Modificar
+cmd.cancel=Cancelar
+cmd.back=Volver
+cmd.reset=Restablecer
+cmd.refresh=Actualizar
+cmd.prev=Anterior
+cmd.add=A\u00f1adir
+cmd.remove=Quitar
+cmd.option=Opci\u00f3n
+cmd.search=Buscar
+cmd.supersearch=Super Buscar
+cmd.translate=Traducir
+cmd.newsearch=Nueva b\u00fasqueda
+cmd.clear=Borrar
+cmd.delete=Eliminar
+cmd.orderabc=Ordenar ABC
+cmd.ordertime=Ordenar Tiempo
+cmd.register=Registro
+cmd.nextwords=Siguiente
+cmd.checkwords=Compruebe
+
+item.tips=Consejos
+item.notip=No Consejos
+item.machinecode=C\u00f3digo de m\u00e1quina
+item.inputregcode=C\u00f3digo de Registro
+item.optiontip=Abrir Consejos
+item.optionmaxresult=N\u00famero m\u00e1ximo de Resultados
+item.optionmatchlevel=Nivel Match
+item.optionselectdb=Seleccionar la base de datos
+item.optionbasicdb=B\u00e1sico de bases de datos
+item.optionuserdb=Base de datos de usuarios
+item.optionotherdb=Otros
+item.optionsetlanguage=Definir Idioma
+item.optionlanen=Ingl\u00e9s
+item.optionlande=Alem\u00e1n
+item.optionlancn=Chino
+item.norecords=No Documentos
+item.optionsetnet=Seleccione neto
+item.optionsetnetchina=Chino neto
+item.optionsetnetother=Normal neto
+item.verison=Versi\u00f3n 
+
+message.emptykeyword=Por favor, de entrada la palabra
+message.savesucc=Guardar \u00e9xito!
+message.savefail=Fail para guardar!
+message.regsucc=Registro \u00e9xito!
+message.regerror=No inscriban a!
+message.regfail=C\u00f3digo no v\u00e1lido!
+message.regemptycode=Por favor, c\u00f3digo de entrada
+message.noresult=Lo sentimos, no hay resultado
+message.tryothersearch=Por favor, int\u00e9ntelo de Super Buscar/b\u00fasqueda en l\u00ednea
+message.deletewordfail=Fail para eliminar de Word!
+message.wait=Esperando...
+message.normsspace=No space to save.
+message.searching=Buscar...
+message.foundword= palabras encontradas
+message.connecting=Conectando...
+message.connectloaddata=Cargando datos...
+message.connecterror=Error de conexi\u00f3n
+message.loaddataerror=Error de carga de datos
+
+message.about1=MoDict Version: V
+message.about=\u00A9 los derechos de autor 2008 por MoBabel\nAyuda y m\u00e1s informaci\u00f3n se puede encontrar en:\nhttp://www.mobabel.net\nhttp://www.modict.net\n
+#Búsqueda en línea está respaldada por
+message.help=Por favor, visite la p\u00e1gina web para obtener m\u00e1s ayuda: \nhttp://www.mobabel.net 
+message.quit=\u00bfEst\u00e1s seguro de dejar de fumar?
+message.deleteword=\u00bfEst\u00e1 seguro de eliminar esta palabra?
+

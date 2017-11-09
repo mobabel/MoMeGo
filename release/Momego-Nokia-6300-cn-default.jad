@@ -1,0 +1,12 @@
+MIDlet-Name: MoMeGo
+MIDlet-Version: 01.01
+MIDlet-Vendor: Mobabel.NET
+MIDlet-Jar-URL: Momego-Nokia-6300-cn-default.jar
+MIDlet-Jar-Size: 274927
+MIDlet-Description: MoMeGo
+MIDlet-Icon: /icon.png
+MIDlet-Info-URL: http://www.mobabel.net
+MIDlet-1: MoMeGo,/icon.png,net.mobabel.midlet.Momego
+MIDlet-Delete-Confirm: MoMeGo wirklich deinstallieren?
+MIDlet-Permissions: javax.microedition.io.Connector.http,javax.microedition.io.Connector.https,javax.microedition.io.PushRegistry,javax.microedition.io.Connector.sms,javax.wireless.messaging.sms.receive,javax.wireless.messaging.sms.send,javax.microedition.io.Connector.cbs,javax.wireless.messaging.cbs.receive,javax.microedition.io.Connector.mms,javax.wireless.messaging.mms.receive,javax.wireless.messaging.mms.send,javax.microedition.pim.ContactList.read,javax.microedition.pim.ContactList.write
+Service-URL: http://www.mobabel.net

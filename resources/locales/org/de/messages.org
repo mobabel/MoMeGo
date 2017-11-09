@@ -1,0 +1,193 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+# � = \u00E4 ae, � = \u00C4 Ae
+# � = \u00F6  oe, � = \u00D6 Oe
+# � = \u00FC ue, � = \u00DC  Ue
+# � = \u00DF 	ss
+
+var:polish.command.select=Auswahl
+var:polish.command.cancel=Abbruch
+var:polish.command.delete=Löschen
+var:polish.command.clear=Frei
+var:polish.command.options=Optionen
+var:polish.title.input=Eingabe
+
+var:polish.command.mark=wählen
+var:polish.command.unmark=abwähl.
+#Aufheben
+
+polish.predictive.setup.cmd.exit=beenden
+polish.predictive.setup.cmd.cancel=schließen
+polish.predictive.setup.cmd.yes=ja
+polish.predictive.setup.cmd.no=nein
+polish.predictive.setup.title=title
+polish.predictive.setup.info=info
+polish.predictive.setup.status.delete=löschen
+polish.predictive.setup.status.install=installieren
+polish.predictive.setup.status.finished=fertig
+polish.predictive.setup.error=fehler
+polish.predictive.setup.cancel=schließen
+polish.predictive.command.enable=enable
+polish.predictive.command.install=installieren
+polish.predictive.command.disable=disable
+polish.predictive.registerNewWord.command=command
+polish.predictive.title=title
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=title
+polish.predictive.download.message=nachricht
+polish.predictive.registerNewWord.label=label
+polish.predictive.local.title=title
+polish.predictive.local.message=nachricht
+
+title.mainmenu=Menü
+title.online=Online Dict
+title.option=Einstellungen
+title.result=Ergebnis
+title.wordlist=Liste
+title.wordbook=Wort Buch
+title.about=Über
+title.help=Hilfe
+title.register=Registieren
+title.alerterror=Fehler:
+title.alertinfo=Info:
+title.alertwarning=Warnung:
+title.history=Verlauf
+title.userbook=User Buch
+title.wordbookmenu=Wort Menü
+title.recitemenu=Rezitieren Menü
+title.reciterandom=Zufälliges Rezitieren
+title.recitewordfill=Wort Füllen
+title.recitewordchoice=Wort Auswahl
+
+cmd.ok=OK
+cmd.help=Hilfe
+cmd.about=Über
+cmd.select=Wählen
+cmd.quit=Beenden
+cmd.showLog=Show Log
+cmd.no=Nein
+cmd.yes=Ja
+cmd.continue=Weiter
+cmd.save=Speichern
+cmd.edit=Ändern
+cmd.cancel=Schließen
+cmd.reset=Aktualisieren
+cmd.refresh=Weiter
+cmd.prev=Zurück
+cmd.add=Hinzufügen
+cmd.remove=Entfernen
+cmd.back=Zurück
+cmd.update=Aktualisieren
+cmd.changeApplicationPassword=Passwort ändern
+cmd.snapshot=Klick!
+cmd.option=Optionen
+cmd.save=Speichern
+cmd.search=Suchen
+cmd.supersearch=Super Suchen
+cmd.translate=Übersetzen
+cmd.newsearch=Neu Suchen
+cmd.clear=Löschen
+cmd.delete=Entfernen
+cmd.orderabc=Sortiert nach ABC
+#Sortierung
+cmd.ordertime=Sortiert nach Datum
+cmd.register=Registieren
+cmd.nextwords=Weiter
+cmd.checkwords=Prüfen
+
+item.tips=Tipp
+item.notip=Ohne Tipp
+item.machinecode=Maschine Code
+item.inputregcode=Registiert Code
+item.optiontip=Öffnen Tipp
+item.optionmaxresult=Maximum Ergebnis Menge
+item.optionmatchlevel=Passende Stufe
+item.optionselectdb=Datenbank Auswahl
+item.optionbasicdb=Basis Datenbank
+item.optionuserdb=Benutzer Datenbank
+item.optionotherdb=Anderes
+item.optionsetlanguage=Sprache Auswahl
+item.optionlanen=Englisch
+item.optionlande=Deutsch
+item.optionlancn=Chinesisch
+item.norecords=Keine Rekorde
+item.optionsetnet=Netz Auswahl
+item.optionsetnetchina=China Netz
+item.optionsetnetother=Normal Netz
+item.verison=Version 
+
+message.emptykeyword=Bitte Wort eingeben
+message.savesucc=Erfolgreich gespeichert!
+message.savefail=Nicht gespeichert!
+message.regsucc=Erfolgreich registieren!
+message.regerror=Fehler bei Registierung!
+message.regfail=Ungültig Code!
+message.regemptycode=Bitte Code eingeben
+message.noresult=Sorry, keine Ergebnisse
+message.tryothersearch=Bitte versuchen Super Suchen/Online Suchen
+message.deletewordfail=Wort wurde nicht gelöscht!
+message.wait=Warten...
+message.normsspace=Kein Speicher mehr.
+message.searching=Suchen...
+message.foundword= Wörter gefunden
+message.connecting=Verbinden...
+message.connectloaddata=Laden Daten...
+message.connecterror=Verbindung Fehler
+message.loaddataerror=Laden Daten Fehler
+
+message.about1=MoDict Version: V
+message.about=© copyright 2008 by MoBabel\nHilfe und weitere Informationen finden Sie unter:\nhttp://www.mobabel.net\nhttp://www.modict.net\n
+#Online Suchen ist unterstützt bei
+message.help=Bitte besuchen unsere Website:\nhttp://www.mobabel.net
+message.quit=Wollen Sie wirklich die Anwendung beenden?
+message.deleteword=Wollen Sie wirklich das Wort löschen?
+
+menu.impressum=Impressum
+menu.mostvisited=Meisbesucht
+
+menu.address=Adresse/Kontakte
+menu.infooftheme=mehr zum Thema
+menu.mediengalerie=Mediengalerie
+menu.comment=Kommentare
+menu.comments=Kommentare/Bewertung
+menu.addcomment=Kommentieren
+menu.saveasfavo=Als Favorit speichern
+menu.waycal=Routenberechnung
+menu.introduce=Weiterempfehlen
+menu.near=In der Nähe
+
+menu.photo=Snapshot
+menu.view=Ansicht
+menu.sync=Abgleich
+menu.accountInitialization=Konto einrichten
+                           
+#Account.storePinQuestion=Wollen Sie wirklich die PIN speichern?
+Account.storePinQuestion=Die Speicherung der persönlichen Identifikationsnummer (PIN) innerhalb des Programms stellt ein mögliches Sicherheitsrisiko dar und kann unberechtigten Zugriff auf Ihr Konto unter Umständen erleichtern. Möchten Sie die PIN trotzdem speichern?
+
+messages.request=Anfrage wird ausgeführt...
+messages.requestTransfer=Überweisung wird ausgeführt...
+messages.pleaseWait=Bitte warten...
+
+message.versionUpdate.title=Aktualisierung
+message.versionUpdate.checking=Bitte haben Sie etwas Geduld, es wird geprüft ob eine neue Version der Anwendung vorliegt.
+message.versionUpdate.question=Möchten Sie die Anwendung auf Version {0} updaten? Sie erhalten einen Downloadlink per SMS an Ihre Handynummer {1}.
+message.versionUpdate.hasLatest=Sie haben bereits die aktuelle Version!
+message.versionUpdate.done=Neue Version liegt zum Download für Sie bereit! Sie erhalten in wenigen Minuten eine SMS.
+
+messages.needAccounts=Es liegen keine Bankverbindungen vor!\nBitte richten Sie ein neues Konto über \"Hinzufügen\" ein. 
+message.profile.reloaded=Konten erfolgreich übertragen
+message.profile.reloadedEmpty=Es sind noch keine Profil für Sie hinterlegt!\nBitte Konto manuell eintragen (Optionen->Hinzufügen)
+
+message.wait=Bitte warten
+message.profile.deleted=Konto wurde aus der Liste entfernt
+message.profile.nothingToDelete=Keine Einträge enthalten!
+
+error.exception=Interner Fehler:\n{0}
+error.connection=Verbindungs-Fehler. Details:\n{0}
+error.ioException=Bitte prüfen Sie Ihre Verbindungseinstellungen. Führen Sie zur Sicherheit einen Reset aus. Details:\n{0}

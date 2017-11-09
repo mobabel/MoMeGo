@@ -1,0 +1,144 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+# � = \u00d1	Ñ, � = \u00f1	ñ
+# � = \u00e1	á, � = \u00e9	é
+# � = \u00ed	í, � = \u00f3	ó
+# � = \u00fa	ú, � = \u00fc	ü
+
+var:polish.command.select=Seleccione
+var:polish.command.cancel=Cancelar
+var:polish.command.delete=Eliminar
+var:polish.command.clear=Borrar
+var:polish.command.options=Opciones
+var:polish.title.input=Entrada
+
+var:polish.command.mark=Marca
+var:polish.command.unmark=Anul
+
+polish.predictive.setup.cmd.exit=salida
+polish.predictive.setup.cmd.cancel=cancelar
+polish.predictive.setup.cmd.yes=yes
+polish.predictive.setup.cmd.no=no
+polish.predictive.setup.title=título
+polish.predictive.setup.info=info
+polish.predictive.setup.status.delete=eliminar
+polish.predictive.setup.status.install=instalar
+polish.predictive.setup.status.finished=terminado
+polish.predictive.setup.error=error
+polish.predictive.setup.cancel=cancelar
+polish.predictive.command.enable=permitir
+polish.predictive.command.install=instalar
+polish.predictive.command.disable=desactivar
+polish.predictive.registerNewWord.command=comando
+polish.predictive.title=título
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=título
+polish.predictive.download.message=mensaje
+polish.predictive.registerNewWord.label=etiqueta
+polish.predictive.local.title=título
+polish.predictive.local.message=mensaje
+
+title.mainmenu=Menú
+title.online=Búsqueda en línea
+title.option=Opción
+title.result=Resultado
+title.wordlist=Lista
+title.wordbook=Palabra de libros
+title.about=Acerca de
+title.help=Ayuda
+title.register=Registro
+title.alerterror=Error:
+title.alertinfo=Info:
+title.alertwarning=Advertencia:
+title.history=Historia
+title.userbook=Usuario Reserva
+title.wordbookmenu=Palabra Menú
+title.recitemenu=Recita Menú
+title.reciterandom=Recita aleatoria
+title.recitewordfill=Palabra de relleno
+title.recitewordchoice=Selección de palabras
+
+cmd.ok=OK
+cmd.help=Ayuda
+cmd.about=Acerca de
+cmd.select=Seleccione
+cmd.quit=Salir
+cmd.showLog=Mostrar Registro
+cmd.no=No
+cmd.yes=Sí
+cmd.continue=Continuar
+cmd.save=Guardar
+cmd.edit=Modificar
+cmd.cancel=Cancelar
+cmd.back=Volver
+cmd.reset=Restablecer
+cmd.refresh=Actualizar
+cmd.prev=Anterior
+cmd.add=Añadir
+cmd.remove=Quitar
+cmd.option=Opción
+cmd.search=Buscar
+cmd.supersearch=Super Buscar
+cmd.translate=Traducir
+cmd.newsearch=Nueva búsqueda
+cmd.clear=Borrar
+cmd.delete=Eliminar
+cmd.orderabc=Ordenar ABC
+cmd.ordertime=Ordenar Tiempo
+cmd.register=Registro
+cmd.nextwords=Siguiente
+cmd.checkwords=Compruebe
+
+item.tips=Consejos
+item.notip=No Consejos
+item.machinecode=Código de máquina
+item.inputregcode=Código de Registro
+item.optiontip=Abrir Consejos
+item.optionmaxresult=Número máximo de Resultados
+item.optionmatchlevel=Nivel Match
+item.optionselectdb=Seleccionar la base de datos
+item.optionbasicdb=Básico de bases de datos
+item.optionuserdb=Base de datos de usuarios
+item.optionotherdb=Otros
+item.optionsetlanguage=Definir Idioma
+item.optionlanen=Inglés
+item.optionlande=Alemán
+item.optionlancn=Chino
+item.norecords=No Documentos
+item.optionsetnet=Seleccione neto
+item.optionsetnetchina=Chino neto
+item.optionsetnetother=Normal neto
+item.verison=Versión 
+
+message.emptykeyword=Por favor, de entrada la palabra
+message.savesucc=Guardar éxito!
+message.savefail=Fail para guardar!
+message.regsucc=Registro éxito!
+message.regerror=No inscriban a!
+message.regfail=Código no válido!
+message.regemptycode=Por favor, código de entrada
+message.noresult=Lo sentimos, no hay resultado
+message.tryothersearch=Por favor, inténtelo de Super Buscar/búsqueda en línea
+message.deletewordfail=Fail para eliminar de Word!
+message.wait=Esperando...
+message.normsspace=No space to save.
+message.searching=Buscar...
+message.foundword= palabras encontradas
+message.connecting=Conectando...
+message.connectloaddata=Cargando datos...
+message.connecterror=Error de conexión
+message.loaddataerror=Error de carga de datos
+
+message.about1=MoDict Version: V
+message.about=\u00A9 los derechos de autor 2008 por MoBabel\nAyuda y más información se puede encontrar en:\nhttp://www.mobabel.net\nhttp://www.modict.net\n
+#Búsqueda en línea está respaldada por
+message.help=Por favor, visite la página web para obtener más ayuda: \nhttp://www.mobabel.net 
+message.quit=¿Estás seguro de dejar de fumar?
+message.deleteword=¿Está seguro de eliminar esta palabra?
+

@@ -1,0 +1,166 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+
+var:polish.command.ok=\u786e\u5b9a
+var:polish.command.mark=\u9009\u4e2d
+var:polish.command.unmark=\u53d6\u6d88
+var:polish.command.select=\u9009\u62e9
+var:polish.command.cancel=\u53d6\u6d88
+var:polish.command.delete=\u5220\u9664
+var:polish.command.clear=\u6e05\u9664
+var:polish.command.options=\u9009\u9879
+var:polish.title.input=\u8f93\u5165
+# for hiding menus on BlackBerry devices:
+var:polish.command.hide=\u9690\u85cf
+# used for showing a screen for selecting symbols within TextFields:
+var:polish.command.entersymbol=\u6dfb\u52a0\u5b57\u7b26
+# used by the HtmlBrowser for a links:
+var:polish.command.followlink=Go
+# used by the HtmlBrowser for submitting a form:
+var:polish.command.submit=\u53d1\u9001
+# used by the RssBrowser for returning to the previous page:
+var:polish.command.back=\u8fd4\u56de
+# RSS commands:
+var:polish.rss.command.select=\u663e\u793a
+var:polish.rss.command.followlink=Go
+# used for predictive setup
+polish.predictive.setup.cmd.exit=\u9000\u51fa
+polish.predictive.setup.cmd.cancel=\u53d6\u6d88
+polish.predictive.setup.cmd.yes=\u662f
+polish.predictive.setup.cmd.no=\u5426
+polish.predictive.setup.title=\u6807\u9898
+polish.predictive.setup.info=\u4fe1\u606f
+polish.predictive.setup.status.delete=\u5220\u9664
+polish.predictive.setup.status.install=\u5b89\u88c5
+polish.predictive.setup.status.finished=\u5b8c\u6210
+polish.predictive.setup.error=\u9519\u8bef
+polish.predictive.setup.cancel=\u53d6\u6d88
+polish.predictive.command.enable=\u5f00\u542f
+polish.predictive.command.install=\u5b89\u88c5
+polish.predictive.command.disable=\u5173\u95ed
+polish.predictive.registerNewWord.command=\u6309\u952e
+polish.predictive.title=\u6807\u9898
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=\u6807\u9898
+polish.predictive.download.message=\u6d88\u606f
+polish.predictive.registerNewWord.label=\u6807\u7b7e
+polish.predictive.local.title=\u6807\u9898
+polish.predictive.local.message=\u6d88\u606f
+
+title.mainmenu=\u83dc\u5355
+title.smsWrite=\u5199\u77ed\u6d88\u606f
+title.smsInbox=\u6536\u4ef6\u7bb1
+title.smsOutbox=\u53d1\u4ef6\u7bb1
+title.smsSentMessages=\u5df2\u53d1\u9001
+title.smsSavedMessages=\u5df2\u4fdd\u5b58
+title.smsDraft=\u8349\u7a3f
+title.smsTemplates=\u6a21\u677f
+title.smsRecycle=\u56de\u6536\u7ad9
+title.contactGroup=\u7fa4
+title.contact=\u7535\u8bdd\u672c
+title.option=\u8bbe\u7f6e
+title.about=\u5173\u4e8e
+title.help=\u5e2e\u52a9
+title.register=\u6ce8\u518c
+title.alerterror=\u9519\u8bef:
+title.alertinfo=\u4fe1\u606f:
+title.alertwarning=\u8b66\u544a:
+
+
+cmd.ok=\u9009\u62e9
+cmd.help=\u5e2e\u52a9
+cmd.about=\u5173\u4e8e
+cmd.select=\u9009\u62e9
+cmd.quit=\u9000\u51fa
+cmd.showLog=Show Log
+cmd.no=\u5426
+cmd.yes=\u662f
+cmd.continue=\u7ee7\u7eed
+cmd.save=\u4fdd\u5b58
+cmd.edit=\u7f16\u8f91
+cmd.cancel=\u7ec8\u6b62
+cmd.back=\u8fd4\u56de
+cmd.reset=\u91cd\u8bbe
+cmd.refresh=\u5237\u65b0
+cmd.prev=\u4e0a\u4e00\u9875
+cmd.add=\u6dfb\u52a0
+cmd.remove=\u5220\u9664
+cmd.option=\u8bbe\u7f6e
+cmd.search=\u641c\u7d22
+cmd.clear=\u6e05\u9664
+cmd.delete=\u5220\u9664
+cmd.orderabc=\u5b57\u6bcd\u6392\u5e8f
+cmd.ordertime=\u65f6\u95f4\u6392\u5e8f
+cmd.register=\u6ce8\u518c
+cmd.nextwords=\u7ee7\u7eed
+cmd.checkwords=\u68c0\u67e5
+cmd.reply=\u56de\u590d
+cmd.read=\u8bfb\u53d6
+cmd.sendsms=\u53d1\u77ed\u4fe1
+
+item.tips=\u63d0\u793a
+item.notip=\u65e0\u63d0\u793a
+item.machinecode=\u673a\u5668\u7801
+item.inputregcode=\u6ce8\u518c\u7801
+item.optiontip=\u6253\u5f00\u63d0\u793a
+item.optionmaxresult=\u6700\u5927\u7ed3\u679c\u663e\u793a\u6570
+item.optionmatchlevel=\u5339\u914d\u5ea6
+item.optionselectdb=\u9009\u62e9\u8bcd\u5e93
+item.optionbasicdb=\u57fa\u7840\u8bcd\u5e93
+item.optionuserdb=\u7528\u6237\u8bcd\u5e93
+item.optionotherdb=\u5176\u5b83
+item.optionsetlanguage=\u754c\u9762\u8bed\u8a00
+item.optionlanen=\u82f1\u8bed
+item.optionlande=\u5fb7\u8bed
+item.optionlancn=\u7b80\u4f53\u4e2d\u6587
+item.norecords=\u65e0\u8bb0\u5f55
+item.optionsetnet=\u9009\u62e9\u7f51\u7edc
+item.optionsetnetchina=\u4e2d\u56fd\u7f51\u7edc
+item.optionsetnetother=\u4e00\u822c\u7f51\u7edc
+item.verison=Version V
+
+message.emptykeyword=\u8bf7\u8f93\u5165\u5355\u8bcd
+message.savesucc=\u4fdd\u5b58\u6210\u529f!
+message.savefail=\u4fdd\u5b58\u5931\u8d25!
+message.regsucc=\u6ce8\u518c\u6210\u529f!
+message.regerror=\u6ce8\u518c\u5931\u8d25!
+message.regfail=\u6ce8\u518c\u7801\u4e0d\u7b26!
+message.regemptycode=\u8bf7\u8f93\u5165\u6ce8\u518c\u7801
+message.noresult=\u5bf9\u4e0d\u8d77, \u6ca1\u6709\u7ed3\u679c
+message.tryothersearch=\u8bf7\u8bd5\u8bd5\u8d85\u7ea7\u641c\u7d22\u6216\u5728\u7ebf\u641c\u7d22
+message.deletewordfail=\u5220\u9664\u5931\u8d25!
+message.wait=\u7b49\u5f85...
+message.normsspace=\u7a7a\u95f4\u4e0d\u8db3,\u65e0\u6cd5\u4fdd\u5b58.
+message.searching=\u67e5\u8be2\u4e2d...
+message.foundword=\u5355\u8bcd\u67e5\u5230
+message.connecting=\u8054\u7f51\u4e2d...
+message.connectloaddata=\u8bfb\u53d6\u6570\u636e\u4e2d...
+message.connecterror=\u8054\u7f51\u5931\u8d25
+message.loaddataerror=\u8bfb\u53d6\u6570\u636e\u5931\u8d25
+message.sendsmssucc=\u6d88\u606f\u5df2\u53d1\u9001. 
+messages.loading=\u8bf7\u7b49\u5f85...
+message.about1=Momego Version: V
+message.about=\u00A9 copyright 2009 by MoBabel\n\u66f4\u591a\u5e2e\u52a9\u548c\u4fe1\u606f\u8bf7\u8bbf\u95ee:\nhttp://www.mobabel.net\n
+#在线搜索提供方:
+message.help=\u66f4\u591a\u5e2e\u52a9\u8bf7\u8bbf\u95ee:\nhttp://www.mobabel.net
+message.quit=\u786e\u5b9a\u9000\u51fa\u7a0b\u5e8f?
+message.deleteword=\u786e\u5b9a\u5220\u9664?
+message.quitandsavemessage=\u9000\u51fa\u4e4b\u524d\u4fdd\u5b58\u4e3a\u8349\u7a3f\u5417?
+
+#error message
+error.exception=\u5185\u90e8\u9519\u8bef
+error.urlError=\u65e0\u6548\u5730\u5740
+error.connectNotFound=\u65e0\u6cd5\u627e\u5230\u8fde\u63a5
+error.connectionError=\u8bf7\u68c0\u67e5GPRS/WAP\u8bbe\u7f6e 
+error.noserver=\u65e0\u6cd5\u767b\u9646\u670d\u52a1\u5668
+error.connectionOtherError=\u670d\u52a1\u5668\u56de\u5e94\u9519\u8bef
+error.noPermission=\u6ca1\u6709\u6743\u9650\u8054\u7f51
+error.failtoopensmslistener=\u65e0\u6cd5\u76d1\u542c\u77ed\u4fe1, \u539f\u56e0: 
+error.sendsmsfail=\u53d1\u9001\u5931\u8d25, \u539f\u56e0: 
+error.rmsexception=RMS \u9519\u8bef, \u539f\u56e0: 

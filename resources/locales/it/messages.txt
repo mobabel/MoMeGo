@@ -1,0 +1,144 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+
+#  = \u00e0 à,  = \u00e9 ò
+#  = \u00ec  ì,  = \u00f9 ù
+#  = \u00e8 è,  = \u00e9  é
+
+var:polish.command.select=Seleziona
+var:polish.command.cancel=Annulla
+var:polish.command.delete=Elimina
+var:polish.command.clear=Cancella
+var:polish.command.options=Opzioni
+var:polish.title.input=Input
+
+var:polish.command.mark=Marco
+var:polish.command.unmark=Deselez
+
+polish.predictive.setup.cmd.exit=uscita
+polish.predictive.setup.cmd.cancel=annullare
+polish.predictive.setup.cmd.yes=yes
+polish.predictive.setup.cmd.no=no
+polish.predictive.setup.title=titolo
+polish.predictive.setup.info=info
+polish.predictive.setup.status.delete=eliminare
+polish.predictive.setup.status.install=installare
+polish.predictive.setup.status.finished=finito
+polish.predictive.setup.error=errore
+polish.predictive.setup.cancel=annullare
+polish.predictive.command.enable=consentire
+polish.predictive.command.install=installare
+polish.predictive.command.disable=disattivare
+polish.predictive.registerNewWord.command=comando
+polish.predictive.title=titolo
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=titolo
+polish.predictive.download.message=messaggio
+polish.predictive.registerNewWord.label=etichetta
+polish.predictive.local.title=titolo
+polish.predictive.local.message=messaggio
+
+title.mainmenu=Menu
+title.online=Ricerca online
+title.option=Opzione
+title.result=Risultato
+title.wordlist=Lista
+title.wordbook=Parola Prenota
+title.about=Circa
+title.help=Aiuto
+title.register=Registrati
+title.alerterror=Error:
+title.alertinfo=Info:
+title.alertwarning=Attenzione:
+title.history=Storia
+title.userbook=Prenota utente
+title.wordbookmenu=Parola Menu
+title.recitemenu=Recitare Menu
+title.reciterandom=Recitare Random
+title.recitewordfill=Inserire la parola
+title.recitewordchoice=Scelta di Word
+
+cmd.ok=OK
+cmd.help=Aiuto
+cmd.about=Circa
+cmd.select=Selezionare
+cmd.quit=Esci
+cmd.showLog=Visualizza log
+cmd.no=No
+cmd.yes=S\u00ec
+cmd.continue=Continua
+cmd.save=Salvare
+cmd.edit=Modifica
+cmd.cancel=Annulla
+cmd.back=Indietro
+cmd.reset=Reset
+cmd.refresh=Aggiorna
+cmd.prev=Precedente
+cmd.add=Aggiungere
+cmd.remove=Rimuovere
+cmd.option=Opzione
+cmd.search=Ricerca
+cmd.supersearch=Super Search
+cmd.translate=Tradurre
+cmd.newsearch=Nuova Ricerca
+cmd.clear=Chiaro
+cmd.delete=Eliminare
+cmd.orderabc=Ordina ABC
+cmd.ordertime=Ordina Ora
+cmd.register=Registrati
+cmd.nextwords=Successivo
+cmd.checkwords=Controllo
+
+item.tips=Suggerimenti
+item.notip=N. Suggerimenti
+item.machinecode=Codice macchina
+item.inputregcode=Registrati codice
+item.optiontip=Apri Suggerimenti
+item.optionmaxresult=Max numero dei risultati
+item.optionmatchlevel=Partita Livello
+item.optionselectdb=Selezionare il database
+item.optionbasicdb=Banca dati di base
+item.optionuserdb=Gli utenti del database
+item.optionotherdb=Altro
+item.optionsetlanguage=Imposta lingua
+item.optionlanen=Inglese
+item.optionlande=Tedesco
+item.optionlancn=Cinese
+item.norecords=Nessun record
+item.optionsetnet=Selezionare Net
+item.optionsetnetchina=Cina Net
+item.optionsetnetother=Normale Net 
+item.verison=Versione  
+
+message.emptykeyword=Inserisci parola
+message.savesucc=Salva con successo!
+message.savefail=Non riescono a risparmiare!
+message.regsucc=Registrati successo!
+message.regerror=Non riescono a registrare!
+message.regfail=Codice non valido!
+message.regemptycode=Inserisci il codice
+message.noresult=Siamo spiacenti, nessun risultato
+message.tryothersearch=Riprova super ricerca/ricerca online
+message.deletewordfail=Non riescono a cancellare Parola!
+message.wait=In attesa...
+message.normsspace=Nessuno spazio per salvare.
+message.searching=Ricerca in corso...
+message.foundword= parole trovate
+message.connecting=Connessione in corso...
+message.connectloaddata=Caricamento dei dati in corso...
+message.connecterror=Connessione fallita
+message.loaddataerror=Caricare dati errore
+
+message.about1=MoDict Versione: V
+message.about=\u00A9 diritto d'autore 2008 MoBabel\nGuida e Maggiori informazioni possono essere trovate in:\nhttp://www.mobabel.net\nhttp://www.modict.net\n
+#Online Search is supported by
+message.help=Si prega di visitare il sito web per ottenere pi\u00f9 aiuto:\nhttp://www.mobabel.net
+message.quit=Sei sicuro di smettere?
+message.deleteword=Sei sicuro di cancellare questa parola?
+

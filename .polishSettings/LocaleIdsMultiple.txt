@@ -1,0 +1,3 @@
+message.about=3
+message.versionUpdate.question=2
+messages.about=1

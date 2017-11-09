@@ -1,0 +1,1002 @@
+/* standard labels */
+
+colors {
+	overlay: argb( 0, 255, 255, 255 );
+	bgColor: white ;
+	focusedBgColor:  #eee;
+
+	borderColor: #FF8000; /*orange*/
+	borderColorGreen: #ACE149; /*green*/
+	highlightedBgColor: #FFEDCF;
+	borderColorInfo: #7A70FE; /*green*/
+	borderColorWarning: #FFFF80;/*yellow*/
+	borderColorError: #FF8080; /*red*/
+	
+	fontColor: #101070;            /* blue  16 16 112*/
+	menuFontColor: #504030;        /* brown  80 64 48*/
+	menubarColor : #ccc;
+	menuFontBgColor : #A8A8F2;     /*light blue*/
+	inactiveFontColor: #666666;            /*silver*/
+	activeLabelColor: white;            /*white*/
+	detailFontColor: #606060;  /*grey*/
+	hanziFontColor: #BF0000;  /*dark red*/
+	blackFontColor: black;
+	
+	fontShadowColor: #fff;
+	focusedFontColor: white;
+	focusedBackgroundColor: #FF9900;
+	focusedBorderColor: #FF9900;  /*orange*/
+	gradientTopColor: #fff;
+	gradientBottomColor: #FFB600;
+	brightBgColor: white;
+	
+	titleColor: #000000;
+	titleShadowColor: silver;
+	blueLight: #366BCF;
+	blueDark: #295BB8;
+	tableHeader: rgb(164,164,164);
+}
+
+backgrounds {
+	titleForeground {
+		type: partial;
+		start: 0%;
+		end: 50%;
+		color: #106194;
+		
+	}
+	titleBackground {
+		type: partial;
+		start: 50%;
+		end: 100%;
+		color: #3192B5;
+	}
+	
+	menuForeground {
+		type: partial;
+		start: 0%;
+		end: 50%;
+		color: rgb(186,186,186);
+	}
+	
+	menuBackground {
+		type: partial;
+		start: 50%;
+		end: 102%;
+		color: rgb(164,164,164);
+	}
+	
+	menuSelectedForeground {
+		type: partial;
+		start: 0%;
+		end: 50%;
+		color: blueLight;
+	}
+	
+	menuSelectedBackground {
+		type: partial;
+		start: 50%;
+		end: 102%;
+		color: blueDark;
+	}
+	
+	menubarBackground {
+		type: vertical-gradient;
+		top-color: gradientBottomColor;
+		bottom-color: gradientTopColor;
+		start: 5%;
+		end: 95%;
+	}
+	itemForeground {
+		color: #E6E3EE; /*ligher grey*/
+	}
+	itemBackground {
+		color: #DCD8E7; /*light grey*/
+	}
+	itemFocusedForeground {
+		color: #FBEF64;	/*ligher yellow*/
+	}
+	itemFocusedBackground {
+		color: #FAEB38; /*light yellow*/
+	}
+}
+
+/* The .mainScreen style is a static style, which
+   is set in the MIDlet source-code with the //#style directive.
+   If the source-code would not have defined this
+   style, we could use the dynamic style "list" to design all
+   list-screens. 
+*/
+
+.mainScreen {
+   	title-style: mainTitle;
+	padding: 0;		
+	layout: horizontal-expand | left | top;
+}
+
+.menuScreen {
+    title-style: mainTitle;
+	layout: expand | top;
+}
+
+.subScreen {
+    title-style: mainTitle;
+	layout: expand | top;
+}
+
+/*
+ * The title style is a predefined style which is used for all screen-titles.
+ */
+mainTitle {
+	 background {
+		type: vertical-gradient;
+		top-color: #fff;
+		bottom-color: #106194;
+		start: 0%;
+		end: 95%;
+	}
+	after: url(phone.png);
+	padding-top: 2;
+	padding-left:10;
+	layout: horizontal-expand ;
+	border: none;
+	font-color: fontColor;
+	font-size: small;
+	font-style:bold;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.mainMenuItem {
+	margin: 0;
+	margin-left: 4;
+	margin-right: 4;
+	padding: 0;
+	padding-left: 4;
+	padding-right: 4;
+	font-color: fontColor;
+	font-style: plain;
+	font-size: small;
+	layout: horizontal-expand | left;
+	border{
+       	color: rgb(219,227,232);
+       	width: 0;
+       	bottom-width: 1;
+    }
+	focused-style: .subMenuItemFocused;
+	icon-image: url( icon_menu_%INDEX%.png );
+  	icon-image-align: left;
+
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.mainMenuItemFocused extends mainMenuItem{
+	font-color: fontColor;
+	layout: horizontal-expand | left;
+	border{
+       color: rgb(219,227,232);
+       width: 0;
+       bottom-width: 1;
+    }
+    background {
+		type: vertical-gradient;
+		top-color: #fff;
+		bottom-color: #7BBAE7;
+		start: 5%;
+		end: 90%;
+	}
+}
+/*second level menu*/
+.subMenuItem {
+	margin: 0;
+	margin-left: 4;
+	margin-right: 4;
+	padding: 0;
+	padding-left: 4;
+	padding-right: 4;
+	font-color: fontColor;
+	font-style: plain;
+	font-size: small;
+	layout: horizontal-expand | left;	
+	border{
+       color: rgb(219,227,232);
+       width: 0;
+       bottom-width: 1;
+    }
+	focused-style: .subMenuItemFocused;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+.subMenuItemFocused extends subMenuItem{
+	font-color: fontColor;
+   	background {
+		type: vertical-gradient;
+		top-color: #fff;
+		bottom-color: #7BBAE7;
+		start: 5%;
+		end: 90%;
+	}
+}
+/*third level menu*/
+.subsMenuItem extends subMenuItem{
+	focused-style: .subsMenuItemFocused;
+}
+.subsMenuItemFocused extends subMenuItemFocused{
+
+}
+
+/*use for list of tips in message list screen*/
+.listItemLabel{
+	margin-left: 2;
+	margin-right: 2;
+    padding: 2;
+    layout: expand |left | newline-after;
+    font-color: inactiveFontColor;
+    font-size: small;
+    /*border{
+       color: borderColorGreen;
+       width: 1;
+    }*/
+   	/*background : itemForeground;*/
+}
+
+.listItemLabelFocused extends listItemLabel{
+    font-color: fontColor;
+    /*border{
+       color: borderColor;
+    }*/
+    background : itemFocusedForeground;
+}
+
+.listItem {
+	margin-left: 2;
+	margin-right: 2;
+	padding:2;
+	font-color: fontColor;
+	font-size: small;
+	layout: expand | left;
+	focused-style: .listItemFocused;
+	label-style: .listItemLabel;
+	/*background : itemBackground;*/
+	border{
+       color: rgb(219,227,232);
+       width: 0;
+       bottom-width: 1;
+    }
+}
+
+.listItemFocused extends listItem{
+	label-style: .listItemLabelFocused;
+	border: none;
+    background : itemFocusedBackground;
+}
+
+.msgRead extends listItem {
+	before: url(msgread.png);
+	focused-style: .msgReadFocused;
+}
+.msgReadFocused extends listItemFocused {
+	before: url(msgread.png);
+}
+
+.msgUnread extends listItem {
+	before: url(msgunread.png);
+	focused-style: .msgUnreadFocused;
+}
+.msgUnreadFocused extends listItemFocused {
+	before: url(msgunread.png);
+}
+
+.msgOutbox extends listItem {
+	focused-style: .msgOutboxFocused;
+}
+.msgOutboxFocused extends listItemFocused {
+}
+
+.msgSended extends listItem {
+	focused-style: .msgSendedFocused;
+}
+.msgSendedFocused extends listItemFocused {
+}
+
+.msgSaved extends listItem {
+	focused-style: .msgSavedFocused;
+}
+.msgSavedFocused extends listItemFocused {
+
+}
+.msgDraft extends listItem {
+	focused-style: .msgDraftFocused;
+}
+.msgDraftFocused extends listItemFocused {
+
+}
+.msgTemplate extends listItem {
+	focused-style: .msgTemplateFocused;
+}
+.msgTemplateFocused extends listItemFocused {
+
+}
+.msgRecycle extends listItem {
+	focused-style: .msgRecycleFocused;
+}
+.msgRecycleFocused extends listItemFocused {
+
+}
+.contact extends listItem {
+	focused-style: .contactFocused;
+}
+.contactFocused extends listItemFocused {
+}
+
+/*used in recite and result screen*/
+.listDetailItem {
+	margin-left: 5;
+	margin-right: 5;
+	padding:2;
+	padding-left:2;
+	padding-right:2;
+	font-color: inactiveFontColor;
+	font-size: small;
+	text-vertical-adjustment:-2;
+	layout: expand | left | newline-after;
+
+	focused-style: .listDetailItemFocused;
+	label-style: .listDetailItemLabel;
+	/*border{
+		type : bottom;
+        color: borderColorGreen;
+        width : 1;
+    }*/
+}
+
+.listDetailItemFocused extends listDetailItem{
+	label-style: .listDetailItemLabelFocused;
+	font-color: hanziFontColor;
+    /*border{
+       	color: borderColor;
+       	type : bottom;
+	   	width: 2;
+    }*/
+    background : none;
+
+}
+
+.listDetailItemLabel{
+	margin-left: 5;
+	margin-right: 5;
+    padding: 2;
+    padding-left:2;
+    padding-right:2;
+    layout: expand |left | newline-after;
+    font-color: inactiveFontColor;
+    font-size: small;
+    border{
+       color: borderColorGreen;
+       width: 1;
+    }
+}
+
+.listDetailItemLabelFocused extends listDetailItemLabel{
+    font-color: fontColor;
+    border{
+       color: borderColor;
+    }
+}
+/*used in help screen*/
+.itemDetailImage{
+	padding: 2;
+	padding-left: 5;
+}
+
+.itemDetailText {
+	padding: 2;
+	padding-left: 5;
+	font-color: detailFontColor;
+	font-size: small;
+	focused-style: .itemDetailTextFocused;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.itemDetailTextFocused extends itemDetailText{
+}
+
+.splashForm{
+    layout: horizontal-expand | horizontal-center | vertical-center;
+}
+
+.spalshImage{
+	padding: 4;
+	layout: h-center | v-center |expand ;
+}
+.splashText {
+	padding: 2;
+	font-color: detailFontColor;
+	font-size: small;
+	layout: h-center | v-center;
+    view-type: midp2;
+}
+.loadSplashGaugeItem extends operationGaugeItemFocused{
+	gauge-show-value: false;
+	padding: 20;
+	layout: h-center | v-center | expand ;
+}
+
+.operationChoiceGroup{ 
+	label-style: .operationChoiceGroupLabel;  
+}
+
+.operationItem {
+	margin-left: 10;
+	margin-right: 10;
+	padding:3;
+	padding-left: 2;
+	font-color: fontColor;
+	font-size: small;
+	layout: expand | left;
+	focused-style: .operationItemFocused;
+	radiobox-selected: url( radiocheck.png);
+	radiobox-plain: url( radio.png);
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.operationItemFocused extends operationItem{ 
+	border{
+       color: borderColorGreen;
+       width:1;
+    }
+}
+
+.operationChoiceGroupLabel{
+	padding-top: 0;
+	margin-left: 10;
+    padding: 2;
+    padding-left:3;
+    padding-right:2;
+    layout: left | newline-after;
+    font-color: fontColor;
+    font-size: small;
+    font-style: bold;
+    //#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.operationMultipleItem extends operationItem{
+	choice-color: borderColor;
+	focused-style: .operationMultipleItemFocused;
+}
+
+.operationMultipleItemFocused extends operationItemFocused { 
+}
+
+
+.operationGaugeItem{
+	label-style: .operationChoiceGroupLabel; 
+	margin-left: 10;
+	margin-right: 10;
+    padding-left: 3;
+    /*border: thinBorder;*/
+    font-size: small;
+    font-color: fontColor;
+    layout: left | expand;
+    /*gauge-width: 100;*/
+    gauge-mode: chunked;
+    gauge-color: inactiveFontColor;
+    gauge-gap-color: inactiveFontColor;
+    /*gauge-vaule-align: right;*/
+    gauge-show-value: true;
+    
+    focused-style: .operationGaugeItemFocused;
+    //#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.operationGaugeItemFocused extends operationGaugeItem{
+	font-color: borderColor;
+	gauge-color: borderColor;
+    gauge-gap-color: borderColor;
+}
+
+.loadGaugeItem extends operationGaugeItemFocused{
+	gauge-show-value: false;
+	padding-bottom: 6;
+}	
+
+/*-----------------------------------------------*/
+
+/*************   MENU BAR   begin  *************/
+menu {
+	margin-top: 24;
+	background: menubarBackground;
+	min-width: 100;
+	font-style: plain;
+	font-size: small;
+	font-color: borderColor;	
+	/* When the extended menubar is not used, the font-section will
+	   apply to the menubar as well:
+	*/
+    /*menubar-color: transparent;*/
+   	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: mf;
+	//#endif
+}
+
+menuitem {
+	padding: 2;
+	font-style: plain;
+	font-size: small;
+	font-color: menuFontColor;	
+	focused-style: .menuitemFocused;
+	/*border-color: borderColor;*/
+	/*command-child-indicator: url( arrowR.png );*/
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: mf;
+	//#endif
+}
+
+menuitemFocused{
+	padding: 2;
+	font-style: plain;
+	font-size: small;
+	font-color: borderColor;	
+	/*border-color: borderColor;*/
+	/*command-child-indicator: url( arrowR.png );*/
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: mf;
+	background {
+		type: vertical-gradient;
+		top-color: #fff;
+		bottom-color: #56A6E0;
+		start: 0%;
+		end: 95%;
+	}
+	layout: expand;
+	//#endif
+}
+
+menubar{
+	margin: 0;
+/*	
+	padding-top: 3;
+	padding: 2;
+*/
+	background : menubarBackground;
+	/*menubar-options-image: url(option_links_r1_c2_f2.png);*/ 
+}
+
+/**
+ * Commands within the menubar on the left side  */ 
+leftcommand {
+	margin: 0;
+    margin-horizontal: 10;
+	padding-top: 3;
+	padding-bottom: 0;
+	font-color: menuFontColor;
+	font-size: small;
+	
+	leftcommand-style:leftcommandstyle;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: mf;
+	//#endif
+}
+
+/*rightcommand-style, leftcommand-style, middlecommand-style, menu-style*/
+
+leftcommandstyle{
+	background {
+	    color: menuFontColor;
+	}
+}
+
+/**
+ * Commands within the menubar on the right side  */ 
+rightcommand extends leftcommand {
+	layout: right;
+	rightcommand-style: rightcommandstyle;
+}
+
+rightcommandstyle{
+	background {
+	    color: menuFontColor;
+	}
+}
+
+middlecommand extends leftcommand{
+	font-color: fontColor;
+	font-style: plain;
+	layout: center;
+	middlecommand-style: middlecommandstyle; 
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: mf;
+	//#endif
+}
+
+middlecommandstyle{
+	background {
+	    color: menuFontColor;
+	}
+}
+/*************   MENU BAR   end  *************/
+
+alertInfoTitle {
+	background {
+		color: borderColorInfo;
+	}
+	padding: 2;
+	padding-right: 0;
+	margin-right: -2;
+	layout: horizontal-expand | center;
+	border: none;
+	font-color: fontColor;
+	font-size: small;
+	font-style: plain;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.alertInfo {
+	margin-top: 2 ;
+	margin-right: 2;
+	margin-left: 2;
+	margin-bottom: 0;
+	padding: 2; 
+	
+	title-style: alertInfoTitle;
+	/*view-type: slideup;*/
+	layout: horizontal-center | horizontal-expand | vertical-shrink | bottom;
+	/*min-height: 70;*/
+	repaint-previous-screen: true;
+	font{
+		color: fontColor;
+		size:  small;
+		style: plain;
+	}
+	border{
+		color: borderColorInfo;
+		width: 2;
+	}
+	background {
+		type: vertical-gradient;
+		top-color: borderColorInfo;
+		bottom-color: #fff;
+		start: 10%;
+		end: 90%;
+    }
+    //#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.alertWarningTitle extends alertInfoTitle{
+	background {
+		color: borderColorWarning;
+	}
+}
+
+.alertWarning extends alertInfo{
+	title-style: alertWarningTitle;
+	border{
+		color: #FFFF80;
+	}
+	background {
+		top-color: borderColorWarning;
+    }
+}
+
+.alertErrorTitle extends alertInfoTitle{
+	background {
+		color: borderColorError;
+	}
+}
+.alertError extends alertInfo{
+	title-style: alertErrorTitle;
+	border{
+		color: borderColorError;
+	}
+	background {
+		top-color: borderColorError;
+    }
+}
+
+.alertMessage {
+	margin: 1;
+	padding:2;
+	font-color: blackFontColor;
+	font-size: small;
+	font-style: plain;
+	/*text-vertical-adjustment:-2;*/
+	layout: expand | left /*| newline-after*/;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+.alertInfo4Message {
+	margin: 2 ;
+	padding: 2; 
+	
+	title-style: alertInfoTitle;
+	/*view-type: slideup;*/
+	layout: horizontal-expand | vertical-shrink | v-center;
+	repaint-previous-screen: true;
+	font{
+		color: fontColor;
+		size:  small;
+		style: plain;
+	}
+	border{
+		color: borderColorInfo;
+		width: 2;
+	}
+	background {
+		type: vertical-gradient;
+		top-color: borderColorInfo;
+		bottom-color: #fff;
+		start: 10%;
+		end: 90%;
+    }
+}
+.smsMessage {
+	margin: 1;
+	padding:2;
+	font-color: blackFontColor;
+	font-size: small;
+	font-style: plain;
+	/*text-vertical-adjustment:-2;*/
+	layout: expand | left /*| newline-after*/;
+}
+
+.processbarInfo extends alertInfo{
+	margin-top: 2/*${polish.FullCanvasHeight} / 3*/;
+	margin-right: 4;
+	margin-left: 4;
+	margin-bottom: 2 /*${polish.FullCanvasHeight} / 3*/;
+	padding: 2; 
+	
+	layout: h-center | h-expand | vertical-shrink | v-center;
+	min-height: 50;
+	background :none;
+}	
+
+scrollbar{
+	scrollbar-slider-width: 2;
+	scrollbar-slider-color: blueDark;
+}
+
+.inputLabel{
+	padding-top: -1;
+	margin-left: 5;
+    padding: 2;
+    padding-left:2;
+    padding-right:2;
+    layout: left | newline-after;
+    font-color: fontColor;
+    font-size: small;
+    //#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+.inputLabelFocused extends inputLabel{
+
+}
+.input {
+	label-style: .inputLabel;
+    margin:1;
+    margin-left:5;
+    margin-right:5;
+    padding :2;
+    textfield-direct-input:true;
+    font-size: small;
+    font-style:bold;
+	background-color: white;
+	font-color: fontColor;
+	layout: expand | top | left;
+	textfield-show-length:false;
+	border {
+		color: borderColor;
+		width: 1;
+	}
+	focused-style: .inputFocused;
+}
+.inputFocused extends input{
+	label-style: .inputLabelFocused;
+}
+
+.inputRight extends input{
+	label-style: .inputRightLabel;
+	border {
+		color: green;
+	}
+	focused-style: .inputRightFocused;
+}
+.inputRightFocused extends inputFocused{
+	label-style: .inputRightLabelFocused;
+	border {
+		color: green;
+	}
+}
+.inputRightLabel extends inputLabel{
+	before: url(checkright.png);
+}
+.inputRightLabelFocused extends inputLabelFocused{
+	before: url(checkright.png);
+}
+
+.inputWrong extends input{
+	label-style: .inputWrongLabel;
+	font-color: red;
+	border {
+		color: red;
+	}
+	focused-style: .inputWrongFocused;
+}
+.inputWrongFocused extends inputFocused{
+	label-style: .inputWrongLabelFocused;
+	font-color: red;
+	border {
+		color: red;
+	}
+}
+.inputWrongLabel extends inputLabel{
+	before: url(checkwrong.png);
+}
+.inputWrongLabelFocused extends inputLabelFocused{
+	before: url(checkwrong.png);
+}
+/*used for choice group*/
+.exclusiveChoiceGroup{
+    margin:1;
+    margin-left:40;
+    margin-right:40;
+    padding: 2;
+    focused-style: .exclusiveChoiceGroupFocused;
+    font-color: fontColor;
+    font-size: small;
+	font-style: bold;
+	layout: expand | center;
+	view-type: exclusive;
+	/*exclusiveview-arrow-color: 	focusedBorderColor;	*/
+	exclusiveview-left-arrow: url(leftarrow.png);
+	exclusiveview-right-arrow: url(rightarrow.png);
+	background : menubarBackground;
+}
+.exclusiveChoiceGroupFocused{
+    margin:1;
+    margin-left:40;
+    margin-right:40;
+    padding: 2;
+    font-color: borderColor;
+    font-size: small;
+	font-style: bold;
+	layout: expand | center;
+	background : menubarBackground;
+}
+.exclusiveChoiceGroupRight extends exclusiveChoiceGroup{
+	label-style: .inputRightLabel;
+	focused-style: .exclusiveChoiceGroupRightFocused;
+}
+.exclusiveChoiceGroupRightFocused extends exclusiveChoiceGroupFocused{
+	label-style: .inputRightLabel;
+}
+.exclusiveChoiceGroupWrong extends exclusiveChoiceGroup{
+	label-style: .inputWrongLabel;
+	focused-style: .exclusiveChoiceGroupWrongFocused;
+}
+.exclusiveChoiceGroupWrongFocused extends exclusiveChoiceGroupFocused{
+	label-style: .inputWrongLabel;
+}
+
+.inputLong extends input{
+	border {
+		bottom-width: 1;
+		color: borderColor;
+		width: 1;
+		bottom-color: #fff;
+	};
+	focused-style: .inputLongFocused;
+}
+
+inputLongFocused extends inputFocused{
+	border {
+		bottom-width: 1;
+		color: borderColor;
+		width: 1;
+		bottom-color: #fff;
+	};
+	/*textfield-show-length: true;*/
+}
+
+.button{
+	margin:1;
+	margin-top: 6;
+	padding-left: 6;
+	padding-right: 6;
+    focused-style: .buttonFocused;
+    font-color: #67686a;
+    font-size: small;
+    background-color: #D0D0D0;
+    
+    border {
+		outer-color: #C0C0C0;
+		inner-color: #808080;
+		width: 3;
+		type: drop-shadow;
+	}
+	layout: shrink | center;
+	//#if !${cfg.osHasMenuFontAlready}
+	font-bitmap: if;
+	//#endif
+}
+
+
+.buttonFocused extends button{
+    font-color: borderColor;	
+    background-color: highlightedBgColor;    
+    border {
+		outer-color: #C0C0C0;
+		inner-color: borderColor;
+		width: 3;
+		type: drop-shadow;
+	}
+}
+
+/*
+ * The info box is shown at each screen and provides the user visual feedback where he is located
+ * within the application's workflow and if data is being downloaded.
+ * The element is aligned with the title of the application.
+ * (ScreenInfo)
+ */
+
+info {
+ 	layout: right;
+ 	font-color: black;
+ 	font-size: small;
+}
+
+
+.myGauge
+{
+      padding: 0;
+      margin-right: 4;
+      margin-top: 4;
+      
+/*      
+      gauge-recline-number: 4;
+      //#if polish.Font.small:defined
+            //#if polish.Font.small < 15
+                  padding-top: 1;
+                  gauge-recline-width: ${ polish.Font.small } - 6;
+                  gauge-recline-height: ${ polish.Font.small } - 6;
+                  padding-horizontal: ${ polish.Font.small } - 4 / 2;
+            //#else
+                  padding-top: 6;
+                  gauge-recline-width: ${ polish.Font.small } - 10;
+                  gauge-recline-height: ${ polish.Font.small } - 10;
+                  padding-horizontal: ${ polish.Font.small } - 8 / 2;
+            //#endif
+      //#else
+            padding-top: 2;
+            gauge-recline-width: 7;
+            gauge-recline-height: 7;
+            padding-horizontal: 4;
+      //#endif
+      gauge-recline-selectedcolor: white;
+      gauge-recline-unselectedcolor: rgb( 247, 119, 185 );
+*/      
+      layout: center;
+}
+
+
+
+

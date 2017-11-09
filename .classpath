@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="skins/|images/|dict/|locales/|cnLib/" kind="src" path="resources"/>
+	<classpathentry kind="src" path="resources/images"/>
+	<classpathentry kind="src" path="resources/locales"/>
+	<classpathentry excluding="com/tinyline/util/" kind="src" path="source/src"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/mmapi.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/midp-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/cldc-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/btapi.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/m2g.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/m3g.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/nokia-ui.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/pdaapi.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/wmapi.jar"/>
+	<classpathentry kind="lib" path="D:/ProgramFiles/J2ME-Polish/import/enough-j2mepolish-client.jar"/>
+	<classpathentry kind="lib" path="/enough-polish-build/import/blackberry-4.2.0.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/enough-polish-j2me"/>
+	<classpathentry kind="lib" path="E:/My Documents/WorkSpace2/modict/lib/gzip-1.2.0.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,168 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+
+var:polish.command.ok=OK
+var:polish.command.mark=Mark
+var:polish.command.unmark=Unmark
+var:polish.command.select=Select
+var:polish.command.cancel=Cancel
+var:polish.command.delete=Del.
+var:polish.command.clear=Clear
+var:polish.command.options=Options
+var:polish.title.input=Input
+# for hiding menus on BlackBerry devices:
+var:polish.command.hide=Hide
+# used for showing a screen for selecting symbols within TextFields:
+var:polish.command.entersymbol=Add Symbol
+# used by the HtmlBrowser for a links:
+var:polish.command.followlink=Go
+# used by the HtmlBrowser for submitting a form:
+var:polish.command.submit=Submit
+# used by the RssBrowser for returning to the previous page:
+var:polish.command.back=Back
+# RSS commands:
+var:polish.rss.command.select=Show
+var:polish.rss.command.followlink=Go
+# used for predictive setup
+polish.predictive.setup.cmd.exit=exit
+polish.predictive.setup.cmd.cancel=cancel
+polish.predictive.setup.cmd.yes=yes
+polish.predictive.setup.cmd.no=no
+polish.predictive.setup.title=title
+polish.predictive.setup.info=info
+polish.predictive.setup.status.delete=delete
+polish.predictive.setup.status.install=install
+polish.predictive.setup.status.finished=finished
+polish.predictive.setup.error=error
+polish.predictive.setup.cancel=cancel
+polish.predictive.command.enable=enable
+polish.predictive.command.install=install
+polish.predictive.command.disable=disable
+polish.predictive.registerNewWord.command=command
+polish.predictive.title=title
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=title
+polish.predictive.download.message=message
+polish.predictive.registerNewWord.label=label
+polish.predictive.local.title=title
+polish.predictive.local.message=message
+
+title.mainmenu=Menu
+title.smsWrite=Create new
+title.smsInbox=Inbox
+title.smsOutbox=Outbox
+title.smsSentMessages=Sent messages
+title.smsSavedMessages=Saved messages
+title.smsDraft=Drafts
+title.smsTemplates=Templates
+title.smsRecycle=Recycle
+title.contactGroup=Group
+title.contact=Contacts
+title.option=Option
+title.about=About
+title.help=Help
+title.register=Register
+title.alerterror=Error:
+title.alertinfo=Info:
+title.alertwarning=Warning:
+
+
+cmd.ok=OK
+cmd.help=Help
+cmd.about=About
+cmd.select=Select
+cmd.quit=Exit
+cmd.showLog=Show Log
+cmd.no=No
+cmd.yes=Yes
+cmd.continue=Continue
+cmd.save=Save
+cmd.edit=Modify
+cmd.cancel=Cancel
+cmd.back=Back
+cmd.reset=Reset
+cmd.refresh=Refresh
+cmd.prev=Previous
+cmd.add=Add
+cmd.remove=Remove
+cmd.option=Option
+cmd.search=Search
+cmd.clear=Clear
+cmd.delete=Delete
+cmd.orderabc=Sort ABC
+cmd.ordertime=Sort Time
+cmd.register=Register
+cmd.nextwords=Next
+cmd.checkwords=Check
+cmd.reply=Reply
+cmd.read=Read
+cmd.sendsms=Send Message
+
+item.messageFrom=From: 
+item.notip=No Tips
+item.machinecode=Machine code
+item.inputregcode=Register code
+item.optiontip=Open Tips
+item.optionmaxresult=Max Result Number
+item.optionmatchlevel=Match Level
+item.optionselectdb=Select Database
+item.optionbasicdb=Basic Database
+item.optionuserdb=Users Database
+item.optionotherdb=Other
+item.optionsetlanguage=Set Language
+item.optionlanen=English
+item.optionlande=German
+item.optionlancn=Chinese
+item.norecords=No Messages
+item.optionsetnet=Select Net
+item.optionsetnetchina=China Net
+item.optionsetnetother=Normal Net
+item.verison=Version 
+
+message.emptykeyword=Please input word
+message.savesucc=Save successfully!
+message.savefail=Fail to save message!
+message.regsucc=Register successfully!
+message.regerror=Fail to register!
+message.regfail=Invalid code!
+message.regemptycode=Please input code
+message.noresult=Sorry,no result
+message.tryothersearch=Please try Super Search/Online Search
+message.deletewordfail=Fail to delete message!
+message.wait=Waiting...
+message.normsspace=No space to save.
+message.searching=Searching...
+message.foundword= words found
+message.connecting=Connecting...
+message.connectloaddata=Loading data...
+message.connecterror=Connection Failed
+message.loaddataerror=Load data error
+message.sendsmssucc=Message has been sent. 
+messages.loading=Waiting...
+message.about1=MoMeGo Version: V
+message.about=\u00A9 copyright 2008 by MoBabel\nHelp and more Information can be found in:\nhttp://www.mobabel.net\n
+#Online Search is supported by
+message.help=Please visit website to get more help:\nhttp://www.mobabel.net
+message.quit=Are you sure to quit?
+message.deleteword=Are you sure to delete this message?
+message.quitandsavemessage=You are about to exit, save message?
+
+#error message
+error.exception=Internal error
+error.urlError=Url invalid
+error.connectNotFound=Can not found connection
+error.connectionError=Check GPRS/WAP-Setting 
+error.noserver=Server is not available
+error.connectionOtherError=No response from server
+error.noPermission=No permission
+error.failtoopensmslistener=Can not open sms listener, detail: 
+error.sendsmsfail=Fail to send message, detail: 
+error.rmsexception=RMS error, detail: 
+
+

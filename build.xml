@@ -1,0 +1,275 @@
+<!-- This file controls the build process.                    -->
+<!-- The most important target is the j2mepolish-target,      -->
+<!-- which controls for what devices the application should   -->
+<!-- be created and so on.                                    -->
+<!--                                                          -->
+<!-- Important: when you hav                                  -->
+<project name="momego" default="j2mepolish">
+  
+  <property name="user.name" value="leeglanz" />
+  <property file="${user.name}.properties" />
+  <property file="leeglanz.properties" />
+  <property file="build.properties" />
+  <property file="version.properties" />
+  
+  <property file="${polish.home}/global.properties"/>
+
+  <property name="cfg.skin" value="default" /><!--default, Olympics2008 -->
+  <property name="cfg.jarName" value="Momego-${polish.vendor}-${polish.name}-${cfg.defaultlocale}-${cfg.skin}.jar" />
+  <property name="cfg.jadName" value="Momego-${polish.vendor}-${polish.name}-${cfg.defaultlocale}-${cfg.skin}.jad" />
+  <property name="cfg.locales" value="de_DE" />
+  <property name="cfg.backAppsPath" value="D:/var/download/momego" />
+  <property name="cfg.BlackBerryCodsUnzipPath" value="cods" />
+  <property name="cfg.appid" value="b9c1bd45" />
+  
+  <property name="blackberry.rapc.opts" value="-Xmx512m"/>
+  <property name="version" value="${version.major}${version.minor}${version.build}" />
+  
+  <property name="cfg.useLocalInput" value="true" />
+  <!-- os can display font, so need no utf8 lib -->
+  <property name="cfg.osHasFontAlready" value="false" />
+  <property name="cfg.osHasMenuFontAlready" value="false" />
+  <property name="cfg.utf8lib" value="cn" />
+  <!-- place lib for advanced input method, ie. pinyin lib for cn os -->
+  <property name="cfg.osFontInputLib" value="cn" />
+  
+  <property name="cfg.defaultlocale" value="cn" />
+  <property name="cfg.keyLength" value="10" />
+  <property name="cfg.userid" value="1" />
+  <property name="cfg.username" value="webmaster" /><!--58.30.17.153   http://localhost/mocms/cms/s.php-->
+  
+  <property name="cfg.msg.appname" value="MoMeGo" />
+  <property name="cfg.msg.deleteConfirm" value="MoMeGo wirklich deinstallieren?" />
+  <property name="cfg.msg.copyright" value="Copyright 2008 Mobabel.NET All rights reserved" />
+  <property name="cfg.trans.url" value="http://www.mobabel.net" />
+  
+  <property name="cfg.vendor" value="BlackBerry" />
+  <property name="cfg.name" value="8100" />
+  <property name="cfg.appName" value="Momego-${polish.vendor}-${polish.name}-${cfg.defaultlocale}-${cfg.skin}" />
+  <property name="cfg.isVendorBlackBerry" value="true" />
+  
+  <property name="cfg.charactersKey1" value=".,!?\u00bf:/()@_-+1';" /> 
+  <property name="cfg.charactersKey2" value="abc2\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7"/>
+  <property name="cfg.charactersKey3" value="def3\u00e8\u00e9\u00ea\u00eb" />
+  <property name="cfg.charactersKey4" value="ghi4\u00ec\u00ed\u00ee\u00ef" />
+  <property name="cfg.charactersKey5" value="jkl5" />
+  <property name="cfg.charactersKey6" value="mno6\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6" />
+  <property name="cfg.charactersKey7" value="pqrs7\u00df" />
+  <property name="cfg.charactersKey8" value="tuv8\u00f9\u00fa\u00fb\u00fc" />
+  <property name="cfg.charactersKey9" value="wxyz9\u00fd" />
+  <property name="cfg.charactersKey0" value=" 0" /> 
+
+<!-- Definition of the J2ME Polish task:                      -->
+<taskdef name="j2mepolish" 
+	  classname="de.enough.polish.ant.PolishTask" 
+	  classpath="${polish.home}/bin/classes:${polish.home}/lib/enough-j2mepolish-build.jar:${polish.home}/lib/jdom.jar"/>
+
+<!-- Definition of the present helper task:                      -->
+
+<taskdef name="present" 
+	classname="de.enough.polish.ant.PresentTask" 
+	classpath="${polish.home}/bin/classes:${polish.home}/lib/enough-j2mepolish-build.jar:${polish.home}/lib/jdom.jar"/>
+	
+<!-- build targets, each target can be called via "ant [name]", 
+   e.g. "ant clean", "ant test j2mepolish" or just "ant" for calling the default-target -->
+	
+<target name="setdeploy" description="Call this target first to set the OTA download-URL, e.g. ant setdeploy j2mepolish">
+  <property name="deploy-url" value="http://www.mobabel.net/modms/g/" />
+</target>
+  
+  <target name="msisdn">
+    <property name="has.msisdn" value="true" />
+  </target>
+    
+  <target name="test" description="Call this target first to skip the obfucation step, e.g. ant test j2mepolish">
+    <property name="test" value="false" />
+    <property name="dir.work" value="build/test" />
+  </target>
+      
+  <target name="init">
+    <property name="test" value="true" />
+    <property name="dir.work" value="build/real/${cfg.appid}" />
+    <property name="dir.dest" value="dist/${cfg.appid}" />
+    <property name="deploy-url" value="" />
+    <mkdir dir="dist/${cfg.appid}"/>
+  </target>
+ 
+<!-- In this target the J2ME Polish task is used.             -->
+<!-- It has 3 sections:                                       -->
+<!--    1. The info-section defines some general information  -->
+<!--    2. The deviceRequirements-section chooses the devices -->
+<!--       for which the application is optimized.            -->
+<!--    3. The build-section controls the actual build        -->
+<!--       process.                                           -->  
+<target name="j2mepolish" depends="init" description="This is the controller for the J2ME build process.">
+	<!--loadfile property="version" srcfile="version" /-->
+
+	<j2mepolish>
+      	<!-- general settings -->
+    	<info
+			name="${cfg.msg.appname}"
+			version="${version.major}.${version.minor}" 
+			description="${cfg.msg.appname}"
+			vendorName="Mobabel.NET" 
+			infoUrl="http://www.mobabel.net" 
+			icon="icon.png" 
+			jarName="${cfg.jarName}" 
+			jarUrl="${deploy-url}${polish.jarName}" 
+			copyright="${cfg.msg.copyright}" 
+			deleteConfirm="${cfg.msg.deleteConfirm}" 
+			permissions="javax.microedition.io.Connector.http,javax.microedition.io.Connector.https,javax.microedition.io.PushRegistry,javax.microedition.io.Connector.sms,javax.wireless.messaging.sms.receive,javax.wireless.messaging.sms.send,javax.microedition.io.Connector.cbs,javax.wireless.messaging.cbs.receive,javax.microedition.io.Connector.mms,javax.wireless.messaging.mms.receive,javax.wireless.messaging.mms.send,javax.microedition.pim.ContactList.read,javax.microedition.pim.ContactList.write"
+    />
+    <!--javax.microedition.io.PushRegistry, javax.microedition.io.Connector.sms, javax.wireless.messaging.sms.receive,javax.wireless.messaging.sms.send,javax.microedition.io.Connector.cbs,javax.wireless.messaging.cbs.receive,javax.microedition.io.Connector.mms,javax.wireless.messaging.mms.receive,javax.wireless.messaging.mms.send,-->
+    <!--javax.microedition.pim.ContactList.read,javax.microedition.pim.ContactList.write,javax.microedition.pim.EventList.read,javax.microedition.pim.EventList.write,javax.microedition.pim.ToDoList.read,javax.microedition.pim.ToDoList.write,javax.microedition.io.Connector.file.read,javax.microedition.io.Connector.file.write-->
+		
+  	<deviceRequirements>
+    	<requirement name="Identifier" value="${cfg.identifier}" />      
+    </deviceRequirements>
+    
+      <!-- build settings -->
+    <build usePolishGui="yes" workDir="${dir.work}" destDir="${dir.dest}" fullscreen="menu">
+    	<!-- fullscreen="" binaryLibrary="import/ksoap2.zip:lib/cldc_classes.zip" -->
+
+    	<!-- midlets definition -->
+      <midlet class="net.mobabel.midlet.Momego" name="${cfg.msg.appname}" />
+      
+      <!-- project-wide variables - used for preprocessing  -->
+      <variables>
+        <variable name="version" value="${version}" />
+         
+		<variable name="polish.FullScreen" value="false" if="${ isOS( Windows ) } or polish.hasPointerEvents" /> 
+
+		<variable name="polish.usePolishTitle" value="true" /> 
+      	<variable name="polish.TextField.showInputInfo" value="true" />
+        <variable name="polish.TextField.allowNativeModeSwitch" value="true" unless="${ isOS( Windows ) } or polish.hasPointerEvents"/>                  
+      	<variable name="polish.TextField.useDirectInput" value="true" unless="${ isOS( Windows ) } or polish.hasPointerEvents"/>
+      	<variable name="polish.TextField.includeInputInfo" value="true" />
+      	<variable name="polish.TextField.suppressDeleteCommand" value="true" if="polish.key.ClearKey:defined" />
+      	
+      	<variable name="polish.ScreenInfo.enable" value="true" /> 
+      	<!-- force to get access to all attributes -->
+      	<variable name="polish.css.allowAllAttributes" value="false" />  
+      	
+      	<variable name="polish.MenuBar.useExtendedMenuBar" value="true" />       
+      	<variable name="polish.MenuBar.useMiddleCommand" value="true"/>
+      	<variable name="polish.useScrollBar" value="true"/>  
+      	<variable name="polish.supportInvisibleItems" value="true" /> 
+      	
+      	<variable name="palm.vendorId" value="MoBabel" />
+        <variable name="palm.enableHighRes" value="true" />     
+          
+          <variable name="polish.ChoiceGroup.suppressMarkCommand" value="false" />
+          <variable name="polish.ChoiceGroup.suppressUnmarkCommand" value="false" />
+          
+          <variable name="polish.TextField.charactersKey1" value="${cfg.charactersKey1}" /> 
+          <variable name="polish.TextField.charactersKey2" value="${cfg.charactersKey2}" />
+          <variable name="polish.TextField.charactersKey3" value="${cfg.charactersKey3}" />
+          <variable name="polish.TextField.charactersKey4" value="${cfg.charactersKey4}" />
+          <variable name="polish.TextField.charactersKey5" value="${cfg.charactersKey5}" />
+          <variable name="polish.TextField.charactersKey6" value="${cfg.charactersKey6}" />
+          <variable name="polish.TextField.charactersKey7" value="${cfg.charactersKey7}" />
+          <variable name="polish.TextField.charactersKey8" value="${cfg.charactersKey8}" />
+          <variable name="polish.TextField.charactersKey9" value="${cfg.charactersKey9}" />
+          <variable name="polish.TextField.charactersKey0" value="${cfg.charactersKey0}" /> 
+
+      </variables>
+      
+      <libraries>
+      	<!--library file="lib/tinylinegzip.zip" /-->
+      	<library file="lib/gzip-1.2.0.jar" />
+      </libraries>
+    	
+      <resources dir="resources/skins/${cfg.skin}" defaultexcludes="yes" excludes="readme.txt">
+        <root dir="resources/skins/${cfg.skin}/images" />
+        <root dir="resources/skins/${cfg.skin}/vendor" />    
+        <root dir="resources/utf8libs/${cfg.utf8lib}" unless="${cfg.osHasFontAlready}"/>
+        <root dir="resources/utf8libs/os_${cfg.osFontInputLib}" />
+        <root dir="resources/locales/en" />
+        <root dir="resources/locales/${cfg.defaultlocale}" />
+        <root dir="resources/bitfont/${cfg.skin}/${cfg.defaultlocale}" unless="${cfg.osHasMenuFontAlready}"/>
+		
+        <!--localization dynamic="false" unless="test" >
+        	<locale name="${cfg.defaultlocale}" unless="${cfg.defaultlocale}==cn"/>
+        	<locale name="cn" encoding="utf-8" if="${modict.defaultlocale}==cn"/>
+        </localization-->
+        <localization locales="${cfg.defaultlocale}" defaultLocale="${cfg.defaultlocale}" 
+        	dynamic="false" if="test" />
+        
+      </resources>
+      <!-- obfuscator settings: do not obfuscate when the test-property is true -->
+      <obfuscator name="ProGuard" unless="polish.blackberry or dontObfuscate" />
+    	
+      <!--  settings: only include debug setting when the test-property is true -->
+      <debug showLogOnError="true" verbose="true" level="debug" if="test">
+        <filter pattern="de.enough.polish.*" level="warn" />
+        <filter pattern="de.enough.polish.rmi.RemoteClient" level="debug" />
+      </debug>
+      <!-- user defined JAD attributes can also be used: -->
+      <jad>
+        <attribute name="Service-URL" value="${cfg.trans.url}" />
+        <attribute name="msisdn" value="${msisdn}" if="has.msisdn" />
+      </jad>
+      
+      <sign keystore="${keystore.path}" key="${keystore.alias}" password="${keystore.password}" if="${sign}" unless="test"/>
+    </build>
+    
+    <!-- execution of emulator(s) -->
+    <emulator
+      wait="true"
+      securityDomain="trusted"
+      enableProfiler="false"
+      enableMemoryMonitor="false"
+      enableNetworkMonitor="false"
+      if="test">
+    </emulator>
+    
+  </j2mepolish>
+</target>
+
+<target name="emulator" description="starts the emulator" depends="test,j2mepolish"/>
+
+
+<target name="update-version">
+	<path id="svnant.classpath">
+	  <fileset dir="${svnant.home}/lib">
+	    <include name="**/*.jar" />
+	  </fileset>
+  </path>
+
+	<taskdef resource="svntask.properties" classpathref="svnant.classpath" />
+	
+	<svn>
+		<status path="${basedir}" lastChangedRevisionProperty="lastCommitRevision" />
+	</svn>
+	
+	<echo file="${basedir}/version" message="${version.major}.${version.minor}.${lastCommitRevision}" />
+</target>
+	
+<target name="clean" 
+  		description="allows a clean build. You should call [ant clean] whenever you made changes to devices.xml, vendors.xml or groups.xml">
+	<delete dir="build" />
+	<delete dir="dist" />
+</target>
+
+<target name="build-all" depends="clean,j2mepolish" description="builds both the client and the server code of the application"/>
+
+<target name="prepare-for-blackberry" description="copy and unzip files for blackberry" if="${cfg.isVendorBlackBerry}">
+	<rename src="${dir.dest}/${cfg.appName}.cod" dest="${cfg.backAppsPath}/${cfg.appid}/${cfg.appName}.zip" />
+	<unzip src="${cfg.backAppsPath}/${cfg.appid}/${cfg.appName}.zip" dest="${cfg.backAppsPath}/${cfg.appid}/${cfg.BlackBerryCodsUnzipPath}" />
+	<rename src="${cfg.backAppsPath}/${cfg.appid}/${cfg.appName}.zip" dest="${cfg.backAppsPath}/${cfg.appid}/${cfg.appName}.cod"/>
+</target>
+
+<target name="build-complete" description="copy the compiled file to other folder" depends="build-all, prepare-for-blackberry" >
+    <copy todir="${cfg.backAppsPath}/${cfg.appid}">
+         <fileset dir="${dir.dest}">
+         	<!--exclude name="**/*.txt" /-->
+         	<include name="**/*.jad"/>
+         	<include name="**/*.jar"/>
+         	<include name="**/*.alx"/>
+         	<include name="**/*.cod"/>
+         </fileset>
+    </copy>
+    <delete dir="build/real/${cfg.appid}" />
+    <delete dir="${dir.dest}"/>
+</target>
+</project>

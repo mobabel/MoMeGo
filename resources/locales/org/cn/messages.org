@@ -1,0 +1,166 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+
+var:polish.command.ok=确定
+var:polish.command.mark=选中
+var:polish.command.unmark=取消
+var:polish.command.select=选择
+var:polish.command.cancel=取消
+var:polish.command.delete=删除
+var:polish.command.clear=清除
+var:polish.command.options=选项
+var:polish.title.input=输入
+# for hiding menus on BlackBerry devices:
+var:polish.command.hide=隐藏
+# used for showing a screen for selecting symbols within TextFields:
+var:polish.command.entersymbol=添加字符
+# used by the HtmlBrowser for a links:
+var:polish.command.followlink=Go
+# used by the HtmlBrowser for submitting a form:
+var:polish.command.submit=发送
+# used by the RssBrowser for returning to the previous page:
+var:polish.command.back=返回
+# RSS commands:
+var:polish.rss.command.select=显示
+var:polish.rss.command.followlink=Go
+# used for predictive setup
+polish.predictive.setup.cmd.exit=退出
+polish.predictive.setup.cmd.cancel=取消
+polish.predictive.setup.cmd.yes=是
+polish.predictive.setup.cmd.no=否
+polish.predictive.setup.title=标题
+polish.predictive.setup.info=信息
+polish.predictive.setup.status.delete=删除
+polish.predictive.setup.status.install=安装
+polish.predictive.setup.status.finished=完成
+polish.predictive.setup.error=错误
+polish.predictive.setup.cancel=取消
+polish.predictive.command.enable=开启
+polish.predictive.command.install=安装
+polish.predictive.command.disable=关闭
+polish.predictive.registerNewWord.command=按键
+polish.predictive.title=标题
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=标题
+polish.predictive.download.message=消息
+polish.predictive.registerNewWord.label=标签
+polish.predictive.local.title=标题
+polish.predictive.local.message=消息
+
+title.mainmenu=菜单
+title.smsWrite=写短消息
+title.smsInbox=收件箱
+title.smsOutbox=发件箱
+title.smsSentMessages=已发送
+title.smsSavedMessages=已保存
+title.smsDraft=草稿
+title.smsTemplates=模板
+title.smsRecycle=回收站
+title.contactGroup=群
+title.contact=电话本
+title.option=设置
+title.about=关于
+title.help=帮助
+title.register=注册
+title.alerterror=错误:
+title.alertinfo=信息:
+title.alertwarning=警告:
+
+
+cmd.ok=选择
+cmd.help=帮助
+cmd.about=关于
+cmd.select=选择
+cmd.quit=退出
+cmd.showLog=Show Log
+cmd.no=否
+cmd.yes=是
+cmd.continue=继续
+cmd.save=保存
+cmd.edit=编辑
+cmd.cancel=终止
+cmd.back=返回
+cmd.reset=重设
+cmd.refresh=刷新
+cmd.prev=上一页
+cmd.add=添加
+cmd.remove=删除
+cmd.option=设置
+cmd.search=搜索
+cmd.clear=清除
+cmd.delete=删除
+cmd.orderabc=字母排序
+cmd.ordertime=时间排序
+cmd.register=注册
+cmd.nextwords=继续
+cmd.checkwords=检查
+cmd.reply=回复
+cmd.read=读取
+cmd.sendsms=发短信
+
+item.tips=提示
+item.notip=无提示
+item.machinecode=机器码
+item.inputregcode=注册码
+item.optiontip=打开提示
+item.optionmaxresult=最大结果显示数
+item.optionmatchlevel=匹配度
+item.optionselectdb=选择词库
+item.optionbasicdb=基础词库
+item.optionuserdb=用户词库
+item.optionotherdb=其它
+item.optionsetlanguage=界面语言
+item.optionlanen=英语
+item.optionlande=德语
+item.optionlancn=简体中文
+item.norecords=无记录
+item.optionsetnet=选择网络
+item.optionsetnetchina=中国网络
+item.optionsetnetother=一般网络
+item.verison=Version V
+
+message.emptykeyword=请输入单词
+message.savesucc=保存成功!
+message.savefail=保存失败!
+message.regsucc=注册成功!
+message.regerror=注册失败!
+message.regfail=注册码不符!
+message.regemptycode=请输入注册码
+message.noresult=对不起, 没有结果
+message.tryothersearch=请试试超级搜索或在线搜索
+message.deletewordfail=删除失败!
+message.wait=等待...
+message.normsspace=空间不足,无法保存.
+message.searching=查询中...
+message.foundword=单词查到
+message.connecting=联网中...
+message.connectloaddata=读取数据中...
+message.connecterror=联网失败
+message.loaddataerror=读取数据失败
+message.sendsmssucc=消息已发送. 
+messages.loading=请等待...
+message.about1=Momego Version: V
+message.about=\u00A9 copyright 2009 by MoBabel\n更多帮助和信息请访问:\nhttp://www.mobabel.net\n
+#在线搜索提供方:
+message.help=更多帮助请访问:\nhttp://www.mobabel.net
+message.quit=确定退出程序?
+message.deleteword=确定删除?
+message.quitandsavemessage=退出之前保存为草稿吗?
+
+#error message
+error.exception=内部错误
+error.urlError=无效地址
+error.connectNotFound=无法找到连接
+error.connectionError=请检查GPRS/WAP设置 
+error.noserver=无法登陆服务器
+error.connectionOtherError=服务器回应错误
+error.noPermission=没有权限联网
+error.failtoopensmslistener=无法监听短信, 原因: 
+error.sendsmsfail=发送失败, 原因: 
+error.rmsexception=RMS 错误, 原因: 

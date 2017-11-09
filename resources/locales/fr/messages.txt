@@ -1,0 +1,152 @@
+#######################################
+#                                     #
+#   This file contains translations   #
+#   of the application.               #
+#   Key and Value are separated       #
+#   by the equals-sign "=".           #
+#                                     #
+#######################################
+# � = \u00e0	à, � = \u00e2	â
+# � = \u00e9	é, � = \u00e8	è
+# � = \u00c9	É, 
+# � = \u00ea	ê, � = \u00eb	ë
+# � = \u00ee	î, � = \u00ef	ï
+# � = \u00f4	ô, � = \u00fb	û   = \u00db Û
+# � = \u00f9	ù, � = \u00fc	ü
+# � = \u00e7	ç, � = \u0153	œ
+# � = \u0027 	',
+# � = \u010f	ď, � = \u ’
+
+var:polish.command.select=S\u00e9lectionnez
+var:polish.command.cancel=Annuler
+var:polish.command.delete=Supprimer
+var:polish.command.clear=Clair
+var:polish.command.options=Options
+var:polish.title.input=Entr\u00e9e
+
+var:polish.command.mark=Mark
+var:polish.command.unmark=Enlever
+
+polish.predictive.setup.cmd.exit=sortie
+polish.predictive.setup.cmd.cancel=annuler
+polish.predictive.setup.cmd.yes=Oui
+polish.predictive.setup.cmd.no=non
+polish.predictive.setup.title=titre
+polish.predictive.setup.info=Info
+polish.predictive.setup.status.delete=Supprimer
+polish.predictive.setup.status.install=installer
+polish.predictive.setup.status.finished=fini
+polish.predictive.setup.error=erreur
+polish.predictive.setup.cancel=annuler
+polish.predictive.command.enable=activer
+polish.predictive.command.install=installer
+polish.predictive.command.disable=d\u00e9sactiver
+polish.predictive.registerNewWord.command=commande
+polish.predictive.title=title
+polish.predictive.wordNotFound=wordNotFound
+polish.predictive.download.title=titre
+polish.predictive.download.message=message
+polish.predictive.registerNewWord.label=\u00e9tiquette
+polish.predictive.local.title=titre
+polish.predictive.local.message=message
+
+# polish.TextField.charactersKey2=abc2\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7
+# polish.TextField.charactersKey8=tuv8\u00fb\u00f9\u00fa\u00fb\u00fc
+
+title.mainmenu=Menu
+title.online=Recherche en ligne
+title.option=Option
+title.result=R\u00e9sultat
+title.wordlist=Liste
+title.wordbook=Word Book
+title.about=A propos de
+title.help=Aider
+title.register=Registre
+title.alerterror=Erreur:
+title.alertinfo=Info:
+title.alertwarning=Avertissement:
+title.history=Histoire
+title.userbook=R\u00e9server utilisateur
+title.wordbookmenu=Mot Menu
+title.recitemenu=Recite Menu
+title.reciterandom=Recite Random
+title.recitewordfill=Remplissez Mot
+title.recitewordchoice=Mot Choix
+
+cmd.ok=OK
+cmd.help=Aider
+cmd.about=A propos de
+cmd.select=S\u00e9lectionnez
+cmd.quit=Sortie
+cmd.showLog=Voir le journal
+cmd.no=Non
+cmd.yes=Oui
+cmd.continue=Continuer
+cmd.save=Enregistrer
+cmd.edit=Modifier
+cmd.cancel=Annuler
+cmd.back=Retour
+cmd.reset=R\u00e9initialiser
+cmd.refresh=Actualiser
+cmd.prev=Pr\u00e9c\u00e9dents
+cmd.add=Ajouter
+cmd.remove=Supprimer
+cmd.option=Option
+cmd.search=Rechercher
+cmd.supersearch=Super Rechercher
+cmd.translate=Traduire
+cmd.newsearch=Nouvelle rechercher
+cmd.clear=Clair
+cmd.delete=Supprimer
+cmd.orderabc=par ordre ABC
+cmd.ordertime=par ordre temne
+cmd.register=Inscrivez
+cmd.nextwords=Suivant
+cmd.checkwords=v\u00e9rifier
+
+item.tips=Conseils
+item.notip=Pas de Conseils
+item.machinecode=Machine code
+item.inputregcode=Register code
+item.optiontip=Conseils Ouvert
+item.optionmaxresult=Max nombre de r\u00e9sultats
+item.optionmatchlevel=Match Niveau
+item.optionselectdb=S\u00e9lectionner la base de donn\u00e9es
+item.optionbasicdb=base de donn\u00e9es de base
+item.optionuserdb=Les utilisateurs de bases de donn\u00e9es
+item.optionotherdb=Autres
+item.optionsetlanguage=D\u00e9finir la langue
+item.optionlanen=Anglais
+item.optionlande=allemand
+item.optionlancn=chinois
+item.norecords=Pas de Documents
+item.optionsetnet=S\u00e9lectionnez Net
+item.optionsetnetchina=Chine Net
+item.optionsetnetother=normale Net
+item.verison=Version 
+
+message.emptykeyword=S'il vous pla\u00eet mot \u010fentr\u00e9e
+message.savesucc=Sauvegarder avec succ\u00e8s!
+message.savefail=chec \u010f\u00e9conomiser!
+message.regsucc=Registre avec succ\u00e8s!
+message.regerror=chec pour vous inscrire!
+message.regfail=Code non valide!
+message.regemptycode=S'il vous pla\u00eet code \u010fentr\u00e9e
+message.noresult=D\u00e9sol\u00e9, aucun r\u00e9sultat
+message.tryothersearch=S'il vous pla\u00eet essayer Super Rechercher en ligne
+message.deletewordfail=chec de supprimer le mot!
+message.wait=en attente...
+message.normsspace=Pas \u010fespace pour enregistrer.
+message.searching=de recherche...
+message.foundword= mots trouv\u00e9s
+message.connecting=Connexion...
+message.connectloaddata=Chargement des donn\u00e9es en cours...
+message.connecterror=Erreur de connexion
+message.loaddataerror=erreur concernant les donn\u00e9es de charge
+
+message.about1=MoDict Version: V
+message.about=\u00A9 le droit \u010fauteur 2008 par MoBabel\nAidez et plus \u010finformations, veuillez consulter:\nhttp://www.mobabel.net\nhttp://www.modict.net\n
+#Online recherche est soutenu par
+message.help=S'il vous pla\u00eet visiter le site pour obtenir plus \u010finformations:\nhttp://www.mobabel.net
+message.quit=Etes-vous s\u00fbr \u010farr\u00eater de fumer?
+message.deleteword=Voulez-vous vraiment supprimer ce mot?

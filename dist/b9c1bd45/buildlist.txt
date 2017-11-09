@@ -1,0 +1,2 @@
+Generic/DefaultColorPhone240x320	cn	Momego-Generic-DefaultColorPhone240x320-cn-default.jar	Momego-Generic-DefaultColorPhone240x320-cn-default.jad	-	240x320xnull
+
