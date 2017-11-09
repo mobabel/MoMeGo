@@ -3,7 +3,7 @@ Java ME Mobile Chinese Message App
 
 ## Overview
 
-Development scene: 2009, the mobile world of Nokia, there were only few smart phones like iPhone 3G. Most of apps are J2ME apps.
+Development scene: 2009, the mobile world of Nokia, there were only few of smart phones like iPhone 3G. Most of apps are J2ME apps.
 
 Video Demo:
 https://www.youtube.com/watch?v=FYwnZ86NiZQ
@@ -20,13 +20,15 @@ https://github.com/Enough-Software/j2mepolish
 
 ## Getting Started
 
-⋅⋅* Eclipse
-⋅⋅* WTk
-⋅⋅* BlackBerry_JDE_4.x.x
-⋅⋅* Nokia J2ME SDK
-⋅⋅* SonyEricsson JavaME_SDK_CLDC
+1. Eclipse
+2. WTk
+3. BlackBerry_JDE_4.x.x
+4. Nokia J2ME SDK
+5. SonyEricsson JavaME_SDK_CLDC
 
 
+
+---
 ---
 
 跨语言平台收发中文短信软件： MoMeGo (Mobile Message GO)
